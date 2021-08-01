@@ -1,0 +1,381 @@
+@media (min-width: 911px) and (max-width: 1500px)  {
+    section {
+        padding: 40px;
+        padding-bottom: 120px;
+    }
+    header {
+        padding: 20px 40px;
+    }
+    header .logo {
+        position: relative;
+        max-width: 60px;
+    }
+    header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li a {
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    
+    header ul li a:hover {
+        color: #ed0223;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/DiscibePepsiWeb/img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    } 
+
+    .toggleMenu.active {
+        background: url(/DiscibePepsiWeb/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat; 
+        filter: invert(1);
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+
+    .content .textBox a {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .content .imgBox {
+        
+        display: flex;
+        padding-right: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .content .imgBox img {
+        max-width: 200px;
+        height: initial;
+        left: 50%;
+    }
+    
+    .content .imgCircle::before { 
+        clip-path: circle(160px at 50% 50%);
+    }
+    
+    .content .imgCircle:hover:before {
+        background: #eb8c1b;
+        clip-path: circle(500px at center);
+        border-radius: 20px; 
+        right: 10%;
+    }
+    
+    .thumb li img {
+        max-width: 30px;
+    }
+
+    .sci {
+        right: 0;
+        width: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        transform: initial;
+    }
+
+}
+
+
+
+@media (max-width: 911px){
+    section {
+        padding: 40px;
+        padding-bottom: 120px;
+    }
+    header {
+        padding: 20px 40px;
+    }
+    header .logo {
+        position: relative;
+        max-width: 60px;
+    }
+    header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li a {
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    
+    header ul li a:hover {
+        color: #ed0223;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/DiscibePepsiWeb/img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    } 
+
+    .toggleMenu.active {
+        background: url(/DiscibePepsiWeb/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat; 
+        filter: invert(1);
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+
+    .content .textBox a {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .content .imgBox {
+        width: 95%;
+        display: flex;
+        padding-right: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .content .imgBox img {
+        max-width: 150px;
+        height: initial;
+        left: 50%;
+    }
+    
+    .content .imgCircle::before { 
+        clip-path: circle(110px at 50% 50%);
+    }
+    
+    .content .imgCircle:hover:before {
+        right: initial;
+    }
+
+    .thumb li img {
+        max-width: 30px;
+    }
+
+    .sci {
+        right: 0;
+        width: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        transform: initial;
+    }
+
+}
+
+@media (max-width: 550px){
+    section {
+        padding: 40px;
+        padding-bottom: 120px;
+    }
+    header {
+        padding: 20px 40px;
+    }
+    header .logo {
+        position: relative;
+        max-width: 60px;
+    }
+    header ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header ul.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li a {
+        display: inline-block;
+        color: #111;
+        font-weight: 400;
+        margin-left: 0;
+        text-decoration: none;
+        font-size: 2em;
+        margin: 10px 0;
+    }
+    
+    header ul li a:hover {
+        color: #ed0223;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(/DiscibePepsiWeb/img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    } 
+
+    .toggleMenu.active {
+        background: url(/DiscibePepsiWeb/img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat; 
+        filter: invert(1);
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .content .textBox h2 {
+        font-size: 3em;
+    }
+
+    .content .textBox a {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .content .imgBox {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        padding-right: 0;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .content .imgBox img {
+        max-width: 150px;
+        height: initial;
+        left: 50%;
+    }
+
+    .content .imgBox:hover img {
+        left: 50%;
+        top: 70%;
+    }
+
+    .content .imgCircle {
+        width: 93%;
+    }
+    
+    .content .imgCircle::before { 
+        clip-path: circle(100px at 50% 50%);
+    }
+    
+    .content .imgCircle:hover:before {
+        right: 0;
+        top: 0;
+    }
+
+    .thumb li img {
+        max-width: 30px;
+    }
+
+    .sci {
+        right: 0;
+        width: 50px;
+        background: rgba(0, 0, 0, 0.2);
+        transform: initial;
+    }
+
+}
